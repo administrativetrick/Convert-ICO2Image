@@ -11,7 +11,7 @@ The Module has 2 Parameters
  - files
  - Formats
 
-The files parameter defaults to C:\ico_conversion, you can manually give this another value if you do now want to use c:\ico_conversion as the location to store your ico file and the resulting converted images.
+The files parameter defaults to the current working directory, you can manually give this another value as the location to store your ico file and the resulting converted images.
 
 The Formats Paremeter defaults to Png.
 
