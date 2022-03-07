@@ -2,7 +2,7 @@
 
 To use Convert2ICOImage
  - Import the module into Porwershell (Example Import shown below)
-   - Import-Module 'C:\ConvertICO2Image.psd1'
+   - `Import-Module 'C:\ConvertICO2Image.psd1'`
  - Create a folder c:\ at C:\ico_conversion
  - Place a .ico file into C:\ico_conversion
  - Run the Module
