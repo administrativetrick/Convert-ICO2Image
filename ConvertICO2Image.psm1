@@ -2,14 +2,14 @@
 	.SYNOPSIS
 		Converts a given ICO file to a either a PNG, JPG, BMP or Tiff File
 	
-	.PARAMETER Path
-		The path where your .ico file is stored
+	.PARAMETER files
+		The directory where your .ico file is stored (defaults to the Current Working Directory)
 
-	.PARAMETER Path
-		The path where your .ico file is stored
+	.PARAMETER Formats
+		The format you would like to convert to. Can input more than one format if you want multiple copies.
 	
 	.EXAMPLE
-		PS C:\> Convert-ICO2Image -files c:\ico_conversion
+		PS C:\> Convert-ICO2Image
 
 	.EXAMPLE
 		PS C:\> Convert-ICO2Image -files c:\ico_conversion -Format Png
@@ -24,7 +24,7 @@ function Convert-ICO2Image
 	param
 	(
 		[Parameter(Mandatory = $false)]
-		$files = "c:\ico_conversion",
+		$files = (Get-Item .\).FullName,
 		[Parameter(Mandatory = $false)]
 		[ValidateNotNull()]
 		[ValidateSet('Png','Jpeg','Bmp','Tiff','Gif')]
